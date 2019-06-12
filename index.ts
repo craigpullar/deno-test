@@ -1,4 +1,3 @@
-
 import App, { RouteListener } from "./app.ts";
 import { ServerRequest } from "https://deno.land/std/http/server.ts";
 

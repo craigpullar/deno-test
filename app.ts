@@ -4,6 +4,7 @@ export { default as RouteListener } from "./route-listener.ts";
 
 async function App(routeListeners: Array<Function>) {
   for await (const req of serve(":8000")) {
+    console.log(req.method);
     routeListeners.forEach((fn) => fn(req));
   }
 }
